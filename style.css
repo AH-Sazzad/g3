@@ -1,6 +1,20 @@
 body{
 
 }
+/* common style */
+.btn{
+    color: #FFF;
+text-align: center;
+font-family: "Work Sans";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border-radius: 8px;
+background: #FF900E;
+padding: 1.25rem;
+border: none;
+}
 /* header section  */
 /* nav bar secton */
 .header{
@@ -77,19 +91,7 @@ font-weight: 400;
 line-height: 26px; /* 162.5% */
 
 }
-.btn{
-    color: #FFF;
-text-align: center;
-font-family: "Work Sans";
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-border-radius: 8px;
-background: #FF900E;
-padding: 1.25rem;
-border: none;
-}
+
 .header-img{
     display: flex;
     justify-content: center;
@@ -101,6 +103,57 @@ width: 80%;
 }
 /* nev bar section */
 /* header section */
+/* MAIN SECTION  */
+main{
+    padding: 0px 50px;
+}
+.features{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+    .features-img{
+        display: grid;
+        grid-template-columns: repeat(2 ,49%);
+        gap: 10px;
+}
+.features-content{
+    margin-left: 30px;
+}
+.features-title{
+    color: #FF900E;
+font-family: "Work Sans";
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.features-title-1{
+    color: #727272;
+font-family: "Work Sans";
+font-size: 45px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.features-title-2{
+    color: #131313;
+font-family: "Work Sans";
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.features-description{
+    color: #727272;
+font-family: "Work Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+/* MAIN SECTION */
 /* Responsive Mobile web layout  */
 /* /******************************************************************************************************\ */
 @media screen and (max-width:576px ) {
@@ -113,6 +166,15 @@ width: 80%;
             height: 25px;
             margin: 0;
             padding: 0;
+        }
+        /* features section */
+        .features{
+            flex-direction: column-reverse;
+        }
+        .features-img{
+            grid-template-columns: repeat(1 ,100%);
+            gap: 10px;
+            margin-top: 10px;
         }
 }
 /* Resposive Tablet Web layout */
@@ -127,5 +189,8 @@ width: 80%;
         margin: 0;
         padding: 0;
     }
-    
+    /* features section */
+    .features{
+        flex-direction: column;
+    }
 }
