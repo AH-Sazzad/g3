@@ -1,0 +1,131 @@
+body{
+
+}
+/* header section  */
+/* nav bar secton */
+.header{
+    background: rgba(255, 144, 14, 0.10);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 35px;
+}
+.logo{
+    color: #131313;
+text-align: center;
+font-family: "Work Sans";
+font-size: 2.8rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+    height: 25px;
+
+}
+.nav li {
+    list-style: none;
+    
+}
+.nav li a ,button{
+    text-decoration: none;
+    color:  #424242;
+text-align: center;
+font-family: "Work Sans";
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.625rem; /* 144.444% */
+background-color: transparent;
+border: none;
+
+
+}
+.nav li a button{
+    background: transparent;
+    border: none;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title{
+    color:  #131313;
+text-align: center;
+font-family: "Work Sans";
+font-size: 4rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+.description{
+    color:  #727272;
+text-align: center;
+font-family: "Work Sans";
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+
+}
+.btn{
+    color: #FFF;
+text-align: center;
+font-family: "Work Sans";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border-radius: 8px;
+background: #FF900E;
+padding: 1.25rem;
+border: none;
+}
+.header-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 25PX;
+}
+.header-img img{
+width: 80%;
+
+}
+/* nev bar section */
+/* header section */
+/* Responsive Mobile web layout  */
+/* /******************************************************************************************************\ */
+@media screen and (max-width:576px ) {
+        .nav{
+            flex-direction: column;
+           
+        }
+        .nav ul{
+            width: 300px;
+            height: 25px;
+            margin: 0;
+            padding: 0;
+        }
+}
+/* Resposive Tablet Web layout */
+@media screen and (min-width:577px) and (max-width:997px){
+    .nav{
+        flex-direction: column;
+       
+    }
+    .nav ul{
+        width: 300px;
+        height: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
