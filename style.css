@@ -283,7 +283,67 @@ line-height: 26px;
     
 
 }
+/* sponspros */
+.sponspros{
+    display: flex;
+    flex-direction: column;
+}
+.sponspors-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sponspors-content div{
+    width: 500px;
+    text-align: center;
+    margin-top: 50px;
+}
+.sponspors-heding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:  #131313;
+font-family: "Work Sans";
+font-size: 2.8;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+.sponspors-pragraph{
+    color:  #727272;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.sponspors-brand{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
 /* MAIN SECTION */
+/* footer section */
+.footer{
+        border-radius: 8px;
+    background: #FFF4E7;
+    margin: 50px 70px ;
+    padding: 0px 50px;
+}
+.footer >p{
+    color: #424242;
+text-align: center;
+font-family: "Work Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 30px ;
+}
 /* Responsive Mobile web layout  */
 /* /******************************************************************************************************\ */
 @media screen and (max-width:576px ) {
@@ -349,6 +409,19 @@ line-height: 26px;
             align-items: center;
             gap: 20px;
         }
+        /* sponspors */
+        .sponspors-brand{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+            
+        }
+        .footer{
+            margin: 0px ;
+    padding: 0px ;
+        }
 }
 /* Resposive Tablet Web layout */
 @media screen and (min-width:577px) and (max-width:997px){
@@ -393,5 +466,22 @@ line-height: 26px;
 }
 .fact-img .card{
     width: 90%;
+}
+ /* sponspors */
+ .sponspors-brand{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    
+}
+.sponspors-brand img{
+    display: flex ;
+    margin: auto;
+}
+.footer{
+    margin: 0px ;
+padding: 0px ;
 }
 }
